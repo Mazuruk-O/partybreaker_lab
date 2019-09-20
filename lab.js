@@ -1,6 +1,6 @@
 'use strict';
 
-// 1
+/** 1 **/
 var name = "Oleg";
 const constName = "constName";
 
@@ -17,6 +17,8 @@ showMessage("Test");
 showMessage(name);
 showMessage(constName);
 
+/** 2 **/
+
 function showNummber(start,end) {
 
   for (; start <= end; start++) {
@@ -24,5 +26,13 @@ function showNummber(start,end) {
   }
   return;
 }
+
+showNummber(10,30);
+
+/** 3 **/
+
+
+
+
 
 
