@@ -47,5 +47,22 @@ for(var = 0; i < 10; i++){
 	alert( average( square(i), cube(i) ) ) );
 }
 
+/** 4 **/
+
+const const_obj = {
+	name: "Name";
+};
 
 
+var obj = {
+	name: "Name2";
+};
+
+alert(const_obj.name);
+alert(obj.name);
+
+const_obj.name = "NewCOnstName";
+obj.name = "newObjName";
+
+alert(const_obj.name);
+alert(obj.name);
