@@ -31,8 +31,14 @@ showNummber(10,30);
 
 /** 3 **/
 
+function average(a,b) {
+  return (a+b)/2;
+}
 
+function square(a) {
+  return a*a;
+}
 
-
-
-
+function cube(a) {
+  return a*a*a;
+}
