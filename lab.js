@@ -1,6 +1,6 @@
 'use strict';
 
-/** 1 **/
+/** 1 Идентификаторы **/
 var name = "Oleg";
 const constName = "constName";
 
@@ -17,7 +17,7 @@ showMessage("Test");
 showMessage(name);
 showMessage(constName);
 
-/** 2 **/
+/** 2 Циклы **/
 
 function showNummber(start,end) {
 
@@ -29,7 +29,7 @@ function showNummber(start,end) {
 
 showNummber(10,30);
 
-/** 3 **/
+/** 3 Фунции **/
 
 function average(a,b) {
   return (a+b)/2;
@@ -43,19 +43,19 @@ function cube(a) {
   return a*a*a;
 }
 
-for(var = 0; i < 10; i++){
-	alert( average( square(i), cube(i) ) ) );
+for(var i = 0; i < 10; i++){
+	alert( average( square(i), cube(i) ) );
 }
 
-/** 4 **/
+/** 4 Обьекты **/
 
 const const_obj = {
-	name: "Name";
+	name: "Name"
 };
 
 
 var obj = {
-	name: "Name2";
+	name: "Name2"
 };
 
 alert(const_obj.name);
@@ -68,7 +68,7 @@ alert(const_obj.name);
 alert(obj.name);
 
 var obj_test = {
-	age: 50;
+	age: 50
 }
 
 const_obj = obj_test;
@@ -80,9 +80,32 @@ alert(obj.name);
 function createUser(nameUser,cityUser) {
 	return {
 		name: nameUser,
-		city: cityUser;
+		city: cityUser
 	}
 }
 
 let resultFunc_makeUser = makeUser("JS", "Moldova");
 alert(resultFunc_makeUser);
+
+/** 5 Масивы **/
+
+var array = [
+	{ name: 'Marcus Aurelius', phone: '+380445554433' },
+	{ name: 'AAAA BBBBB', phone: '+3804324254433' },
+	{ name: 'DSFSDF AurelSDFiSDFus', phone: '+380234554433' }
+];
+
+var searchNumber = array.find(searchNumber => searchNumber.name === 'Marcus Aurelius');
+
+alert(searchNumber);
+
+/** 6 Коллекции **/
+
+function hashCode(str) {
+    var hash = 0;
+    for (var i = 0; i < str.length; i++) {
+        hash = ~~(((hash << 5) - hash) + str.charCodeAt(i));
+    }
+    return hash;
+}
+
