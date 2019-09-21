@@ -66,3 +66,23 @@ obj.name = "newObjName";
 
 alert(const_obj.name);
 alert(obj.name);
+
+var obj_test = {
+	age: 50;
+}
+
+const_obj = obj_test;
+obj = obj_test;
+
+alert(const_obj.name);
+alert(obj.name);
+
+function createUser(nameUser,cityUser) {
+	return {
+		name: nameUser,
+		city: cityUser;
+	}
+}
+
+let resultFunc_makeUser = makeUser("JS", "Moldova");
+alert(resultFunc_makeUser);
