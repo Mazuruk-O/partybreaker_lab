@@ -42,3 +42,10 @@ function square(a) {
 function cube(a) {
   return a*a*a;
 }
+
+for(var = 0; i < 10; i++){
+	alert( average( square(i), cube(i) ) ) );
+}
+
+
+
