@@ -7,8 +7,8 @@ const constName = "constName";
 const birthYear = 1998;
 
 function showMessage(fname = "No name") {
-  alert(fname + ' ' + "hello!");
-  return;
+    console.log(fname + ' ' + "hello!");
+    return;
 }
 
 showMessage("DonNU");
@@ -21,10 +21,10 @@ showMessage(constName);
 
 function showNummber(start,end) {
 
-  for (; start <= end; start++) {
-    alert(start);
-  }
-  return;
+    for (; start <= end; start++) {
+        console.log(start);
+    }
+    return;
 }
 
 showNummber(10,30);
@@ -32,72 +32,72 @@ showNummber(10,30);
 /** 3 Фунции **/
 
 function average(a,b) {
-  return (a+b)/2;
+    return (a+b)/2;
 }
 
 function square(a) {
-  return a*a;
+    return a*a;
 }
 
 function cube(a) {
-  return a*a*a;
+    return a*a*a;
 }
 
 for(var i = 0; i < 10; i++){
-	alert( average( square(i), cube(i) ) );
+    console.log( average( square(i), cube(i) ) );
 }
 
 /** 4 Обьекты **/
 
 const const_obj = {
-	name: "Name"
+    name: "Name"
 };
 
 
 var obj = {
-	name: "Name2"
+    name: "Name2"
 };
 
-alert(const_obj.name);
-alert(obj.name);
+console.log(const_obj.name);
+console.log(obj.name);
 
 const_obj.name = "NewCOnstName";
 obj.name = "newObjName";
 
-alert(const_obj.name);
-alert(obj.name);
+console.log(const_obj.name);
+console.log(obj.name);
 
 var obj_test = {
-	age: 50
+    age: 50
 }
 
-const_obj = obj_test;
+//const_obj = obj_test;
 obj = obj_test;
 
-alert(const_obj.name);
-alert(obj.name);
+console.log(const_obj.name);
+console.log(obj.name);
 
 function createUser(nameUser,cityUser) {
-	return {
-		name: nameUser,
-		city: cityUser
-	}
+    return {
+        name: nameUser,
+        city: cityUser
+    }
 }
 
-let resultFunc_makeUser = makeUser("JS", "Moldova");
-alert(resultFunc_makeUser);
+let resultFunc_makeUser = createUser("JS", "Moldova");
+console.log(resultFunc_makeUser);
 
 /** 5 Масивы **/
 
 var array = [
-	{ name: 'Marcus Aurelius', phone: '+380445554433' },
-	{ name: 'AAAA BBBBB', phone: '+3804324254433' },
-	{ name: 'DSFSDF AurelSDFiSDFus', phone: '+380234554433' }
+    { name: 'Marcus Aurelius', phone: '+380445554433' },
+    { name: 'AAAA BBBBB', phone: '+3804324254433' },
+    { name: 'DSFSDF AurelSDFiSDFus', phone: '+380234554433' }
 ];
 
 var searchNumber = array.find(searchNumber => searchNumber.name === 'Marcus Aurelius');
 
-alert(searchNumber);
+console.log(searchNumber);
 
 /** 6 Коллекции **/
 
@@ -109,3 +109,4 @@ function hashCode(str) {
     return hash;
 }
 
+console.log(hashCode('123124'))
